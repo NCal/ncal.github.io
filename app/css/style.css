@@ -1,0 +1,92 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css?family=Cousine|Dosis|Rokkitt');
+
+body {
+	min-height: 100%;
+	animation: colorchange 25s; 
+	-webkit-animation: colorchange 25s; 
+	animation-iteration-count: infinite;
+}
+
+iframe {
+	opacity: 0.9;
+	border: 0; width: 230px; height: 230px;
+	 transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+iframe:hover {
+	opacity: 1;
+	 transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.music_container {
+	position: relative;
+	margin-top: 140px;
+	text-align: center;
+}
+
+.nav {
+	width: 200px;
+	font-size: .8em;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.nav a {
+	position: relative;
+	margin: 10px;
+	
+}
+.nav a:hover {
+	animation: wiggle 1s;
+	animation-iteration-count: infinite;
+}
+
+a h5 {
+	color: #000;
+	opacity: .7;
+	 transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+a h5:hover {
+	opacity: 1;
+	color: royalblue;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+
+@keyframes colorchange
+{
+  0%   {background: rgba(249, 229, 159, 0.28); }
+  50%  {background: rgba(245, 92, 92, 0.65);}
+  100% {background: rgba(249, 229, 159, 0.28);}
+}
+
+@-webkit-keyframes colorchange 
+{
+  0%   {background: rgba(249, 229, 159, 0.28);}
+  50%  {background: rgba(245, 92, 92, 0.65);}
+  100% {background: rgba(249, 229, 159, 0.28);}
+}
+
+@-moz-keyframes colorchange 
+{
+  0%   {background: rgba(249, 229, 159, 0.28);}
+  50%  {background: rgba(245, 92, 92, 0.65);}
+  100% {background: rgba(249, 229, 159, 0.28);}
+}
+
+
+@keyframes wiggle{ 
+	0% { left: 0px } 
+	50% {left: 5px;}
+	100% {left: 0px;}
+}

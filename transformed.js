@@ -48,8 +48,8 @@
 
 	/* REACT HOT LOADER */if (false) {
 	  (function () {
-	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.com/node_modules/react-hot-api/modules/index.js"),
-	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.com/node_modules/react-hot-loader/RootInstanceProvider.js"),
+	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.io/node_modules/react-hot-api/modules/index.js"),
+	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
 	        ReactMount = require("react-dom/lib/ReactMount"),
 	        React = require("react");module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {
 	      return RootInstanceProvider.getRootInstances(ReactMount);
@@ -90,7 +90,7 @@
 	  if (false) {
 	    (function () {
 	      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {
-	        var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.com/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
+	        var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
 	          foundReactClasses = true;
 	        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {
 	          module.hot.accept(function (err) {
@@ -142,7 +142,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Cousine|Dosis|Rokkitt);", ""]);
 
 	// module
-	exports.push([module.id, "body {\n\tmin-height: 100%;\n}\n\niframe {\n\topacity: 0.9;\n\tborder: 0; width: 230px; height: 230px;\n\t transition: opacity .25s ease-in-out;\n\t-moz-transition: opacity .25s ease-in-out;\n\t-webkit-transition: opacity .25s ease-in-out;\n}\n\niframe:hover {\n\topacity: 1;\n\t transition: opacity .25s ease-in-out;\n\t-moz-transition: opacity .25s ease-in-out;\n\t-webkit-transition: opacity .25s ease-in-out;\n}\n\n.music_container {\n\tposition: relative;\n\tmargin-top: 140px;\n\ttext-align: center;\n}\n\n.nav {\n\twidth: 200px;\n\tfont-size: .8em;\n\tmargin-top: 10px;\n\tmargin-left: 10px;\n}\n\n.nav a {\n\tmargin: 10px;\n}\n\na h5 {\n\tcolor: #000;\n\topacity: .7;\n\t transition: opacity .25s ease-in-out;\n\t-moz-transition: opacity .25s ease-in-out;\n\t-webkit-transition: opacity .25s ease-in-out;\n}\n\na h5:hover {\n\topacity: 1;\n\tcolor: salmon;\n\ttransition: opacity .25s ease-in-out;\n\t-moz-transition: opacity .25s ease-in-out;\n\t-webkit-transition: opacity .25s ease-in-out;\n}", ""]);
+	exports.push([module.id, "body {\n\tmin-height: 100%;\n\tanimation: colorchange 25s; \n\t-webkit-animation: colorchange 25s; \n\tanimation-iteration-count: infinite;\n}\n\niframe {\n\topacity: 0.9;\n\tborder: 0; width: 230px; height: 230px;\n\t transition: opacity .25s ease-in-out;\n\t-moz-transition: opacity .25s ease-in-out;\n\t-webkit-transition: opacity .25s ease-in-out;\n}\n\niframe:hover {\n\topacity: 1;\n\t transition: opacity .25s ease-in-out;\n\t-moz-transition: opacity .25s ease-in-out;\n\t-webkit-transition: opacity .25s ease-in-out;\n}\n\n.music_container {\n\tposition: relative;\n\tmargin-top: 140px;\n\ttext-align: center;\n}\n\n.nav {\n\twidth: 200px;\n\tfont-size: .8em;\n\tmargin-top: 10px;\n\tmargin-left: 10px;\n}\n\n.nav a {\n\tposition: relative;\n\tmargin: 10px;\n\t\n}\n.nav a:hover {\n\tanimation: wiggle 1s;\n\tanimation-iteration-count: infinite;\n}\n\na h5 {\n\tcolor: #000;\n\topacity: .7;\n\t transition: opacity .25s ease-in-out;\n\t-moz-transition: opacity .25s ease-in-out;\n\t-webkit-transition: opacity .25s ease-in-out;\n}\n\na h5:hover {\n\topacity: 1;\n\tcolor: royalblue;\n\ttransition: opacity .25s ease-in-out;\n\t-moz-transition: opacity .25s ease-in-out;\n\t-webkit-transition: opacity .25s ease-in-out;\n}\n\n\n@keyframes colorchange\n{\n  0%   {background: rgba(249, 229, 159, 0.28); }\n  50%  {background: rgba(245, 92, 92, 0.65);}\n  100% {background: rgba(249, 229, 159, 0.28);}\n}\n\n@-webkit-keyframes colorchange \n{\n  0%   {background: rgba(249, 229, 159, 0.28);}\n  50%  {background: rgba(245, 92, 92, 0.65);}\n  100% {background: rgba(249, 229, 159, 0.28);}\n}\n\n@-moz-keyframes colorchange \n{\n  0%   {background: rgba(249, 229, 159, 0.28);}\n  50%  {background: rgba(245, 92, 92, 0.65);}\n  100% {background: rgba(249, 229, 159, 0.28);}\n}\n\n\n@keyframes wiggle{ \n\t0% { left: 0px } \n\t50% {left: 5px;}\n\t100% {left: 0px;}\n}", ""]);
 
 	// exports
 
@@ -21913,8 +21913,8 @@
 
 	/* REACT HOT LOADER */if (false) {
 		(function () {
-			var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.com/node_modules/react-hot-api/modules/index.js"),
-			    RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.com/node_modules/react-hot-loader/RootInstanceProvider.js"),
+			var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.io/node_modules/react-hot-api/modules/index.js"),
+			    RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
 			    ReactMount = require("react-dom/lib/ReactMount"),
 			    React = require("react");module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {
 				return RootInstanceProvider.getRootInstances(ReactMount);
@@ -22003,7 +22003,7 @@
 					key: 'render',
 					value: function render() {
 						return _react2.default.createElement('div', null, _react2.default.createElement('div', { className: ' nav' }, _react2.default.createElement('h1', { style: { fontStyle: 'italic' } }, 'ncal.github.io'), links.map(function (thang, i) {
-							return _react2.default.createElement('a', { key: i, href: thang.url, target: '_blank' }, _react2.default.createElement('h5', { className: 'links' }, thang.name));
+							return _react2.default.createElement('a', { key: i, href: thang.url }, _react2.default.createElement('h5', { className: 'links' }, thang.name));
 						})));
 					}
 				}]);
@@ -22019,7 +22019,7 @@
 		if (false) {
 			(function () {
 				var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {
-					var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.com/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
+					var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
 						foundReactClasses = true;
 					}var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {
 						module.hot.accept(function (err) {

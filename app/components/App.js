@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 
 let links = [
+	{name:'Dev-Dash Chrome Extension', url:'http://bit.ly/2kVh2mb'},
 	{name:'React Flickr Search', url:'https://ncal.github.io/React-Flickr-Search/'},
-	{name:'CSS Mandala Animation', url:'https://ncal.github.io/Mandala/'},
 	{name:'Oblique Strategies', url:'https://ncal.github.io/Oblique_Strategies/'},
+	{name:'CSS Mandala Animation', url:'https://ncal.github.io/Mandala/'},
 	{name:'Eveningss.com', url:'http://www.eveningss.com/'}
 ];
 

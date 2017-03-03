@@ -48,8 +48,8 @@
 
 	/* REACT HOT LOADER */if (false) {
 	  (function () {
-	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/nb_beta_r/node_modules/react-hot-api/modules/index.js"),
-	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/nb_beta_r/node_modules/react-hot-loader/RootInstanceProvider.js"),
+	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
+	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
 	        ReactMount = require("react-dom/lib/ReactMount"),
 	        React = require("react");module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {
 	      return RootInstanceProvider.getRootInstances(ReactMount);
@@ -92,7 +92,7 @@
 	  if (false) {
 	    (function () {
 	      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {
-	        var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/nb_beta_r/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
+	        var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
 	          foundReactClasses = true;
 	        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {
 	          module.hot.accept(function (err) {
@@ -21955,8 +21955,8 @@
 
 	/* REACT HOT LOADER */if (false) {
 		(function () {
-			var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/nb_beta_r/node_modules/react-hot-api/modules/index.js"),
-			    RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/nb_beta_r/node_modules/react-hot-loader/RootInstanceProvider.js"),
+			var ReactHotAPI = require("/Users/nbroaddus/Desktop/n_dev/work/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
+			    RootInstanceProvider = require("/Users/nbroaddus/Desktop/n_dev/work/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
 			    ReactMount = require("react-dom/lib/ReactMount"),
 			    React = require("react");module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {
 				return RootInstanceProvider.getRootInstances(ReactMount);
@@ -22011,7 +22011,7 @@
 				}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 			}
 
-			var links = [{ name: 'Dev-Dash Chrome Extension', url: 'http://bit.ly/2kVh2mb' }, { name: 'React Flickr Search', url: 'https://ncal.github.io/React-Flickr-Search/' }, { name: 'Oblique Strategies', url: 'https://ncal.github.io/Oblique_Strategies/' }, { name: 'CSS Mandala Animation', url: 'https://ncal.github.io/Mandala/' }, { name: 'Eveningss.com', url: 'http://www.eveningss.com/' }];
+			var links = [{ name: 'Dev-Dash Chrome Extension', url: 'https://ncal.github.io/Dev-Dash/' }, { name: 'React Flickr Search', url: 'https://ncal.github.io/React-Flickr-Search/' }, { name: 'Oblique Strategies', url: 'https://ncal.github.io/Oblique_Strategies/' }, { name: 'CSS Mandala Animation', url: 'https://ncal.github.io/Mandala/' }, { name: 'Eveningss.com', url: 'http://www.eveningss.com/' }];
 
 			{/*APP*/}
 
@@ -22128,7 +22128,7 @@
 		if (false) {
 			(function () {
 				var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {
-					var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/nb_beta_r/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
+					var makeExportsHot = require("/Users/nbroaddus/Desktop/n_dev/work/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
 						foundReactClasses = true;
 					}var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {
 						module.hot.accept(function (err) {

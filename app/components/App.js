@@ -4,6 +4,7 @@ import Foundation from 'react-foundation';
 
 let links = [
 	{name:'Dev-Dash Chrome Extension', url:'https://ncal.github.io/Dev-Dash/'},
+	{name:'React Router Tarot App', url:'https://ncal.github.io/Tarot/'},
 	{name:'React Flickr Search', url:'https://ncal.github.io/React-Flickr-Search/'},
 	{name:'Oblique Strategies', url:'https://ncal.github.io/Oblique_Strategies/'},
 	{name:'CSS Mandala Animation', url:'https://ncal.github.io/Mandala/'},

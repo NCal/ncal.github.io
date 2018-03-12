@@ -22388,7 +22388,7 @@
 	      }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	    }
 
-	    var links = [{
+	    var links = [{ name: 'Fieldmoji [Twitter Node Bot]', url: 'https://www.twitter.com/fieldmoji' }, {
 	      name: 'Dev-Dash Chrome Extension',
 	      url: 'https://ncal.github.io/Dev-Dash/'
 	    }, {

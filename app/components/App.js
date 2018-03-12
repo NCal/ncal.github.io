@@ -3,6 +3,7 @@ import { Row, Column } from 'react-foundation'
 import Foundation from 'react-foundation'
 
 let links = [
+  { name: 'Fieldmoji [Twitter Node Bot]', url: 'https://www.twitter.com/fieldmoji' },
   {
     name: 'Dev-Dash Chrome Extension',
     url: 'https://ncal.github.io/Dev-Dash/'

@@ -22492,7 +22492,7 @@
 	      _createClass(Contact, [{
 	        key: 'render',
 	        value: function render() {
-	          return _react2.default.createElement('div', { className: 'contact component' }, _react2.default.createElement(_reactFoundation.Column, { large: 3, medium: 4, small: 12 }, _react2.default.createElement('h1', null, 'CONTACT'), _react2.default.createElement('h5', null, 'NathanBroaddus@gmail.com'), _react2.default.createElement('a', { className: 'links', href: 'Https://www.Github.com/ncal' }, _react2.default.createElement('h5', null, 'Github.com/ncal')), _react2.default.createElement('a', { className: 'links', href: 'app/assets/NB_Res2017.pdf' }, _react2.default.createElement('h5', null, 'Resume'))));
+	          return _react2.default.createElement('div', { className: 'contact component' }, _react2.default.createElement(_reactFoundation.Column, { large: 3, medium: 4, small: 12 }, _react2.default.createElement('h1', null, 'CONTACT'), _react2.default.createElement('h5', null, 'NathanBroaddus@gmail.com'), _react2.default.createElement('a', { className: 'links', href: 'Https://www.Github.com/ncal' }, _react2.default.createElement('h5', null, 'Github.com/ncal')), _react2.default.createElement('a', { className: 'links', href: 'app/assets/NB_WebDevRes2018.pdf' }, _react2.default.createElement('h5', null, 'Resume'))));
 	        }
 	      }]);
 

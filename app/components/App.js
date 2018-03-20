@@ -3,24 +3,14 @@ import { Row, Column } from 'react-foundation'
 import Foundation from 'react-foundation'
 
 let links = [
+  https://nc-pegasus.herokuapp.com/about
+  { name: 'Pegasus: Mobile Ether Alerts [MERN]', url: 'https://nc-pegasus.herokuapp.com/about' },
   { name: 'Fieldmoji [Twitter Node Bot]', url: 'https://www.twitter.com/fieldmoji' },
-  {
-    name: 'Dev-Dash Chrome Extension',
-    url: 'https://ncal.github.io/Dev-Dash/'
-  },
-  {
-    name: 'GDAX-Express [MERN Stack]',
-    url: 'https://github.com/NCal/gdax-express'
-  },
+  { name: 'Dev-Dash Chrome Extension', url: 'https://ncal.github.io/Dev-Dash/' },
+  { name: 'GDAX-Express [MERN Stack]', url: 'https://github.com/NCal/gdax-express'},
   { name: 'React Router Tarot App', url: 'https://ncal.github.io/Tarot/' },
-  {
-    name: 'React Flickr Search',
-    url: 'https://ncal.github.io/React-Flickr-Search/'
-  },
-  {
-    name: 'Oblique Strategies',
-    url: 'https://ncal.github.io/Oblique_Strategies/'
-  },
+  { name: 'React Flickr Search', url: 'https://ncal.github.io/React-Flickr-Search/'},
+  { name: 'Oblique Strategies', url: 'https://ncal.github.io/Oblique_Strategies/'},
   { name: 'CSS Mandala Animation', url: 'https://ncal.github.io/Mandala/' },
   { name: 'Eveningss.com', url: 'http://www.eveningss.com/' }
 ]

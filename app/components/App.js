@@ -94,7 +94,7 @@ class Contact extends Component {
           <a className="links" href="Https://www.Github.com/ncal">
             <h5>Github.com/ncal</h5>
           </a>
-          <a className="links" href="app/assets/NB_Res2017.pdf">
+          <a className="links" href="app/assets/NB_WebDevRes2018.pdf">
             <h5>Resume</h5>
           </a>
         </Column>

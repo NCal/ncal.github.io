@@ -2,19 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Cousine|Dosis|Rokkitt');
 
 body {
-	min-height: 100%;
+	min-height: 100vh;
 	animation: colorchange 25s; 
 	-webkit-animation: colorchange 25s; 
 	animation-iteration-count: infinite;
+  overflow: hidden;
 }
 
 .footer {
-   position: absolute;
-   bottom: 10px;
-   left: 10px;
-   clear: both;
-   font-size: 14px;
-   padding: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  clear: both;
+  font-size: 14px;
+  padding: 0;
 }
 
 .overlay {
@@ -28,21 +29,39 @@ body {
 }
 
 .component {
-   padding: 0;
+  padding: 0;
 	margin-top: 10px;
 	margin-left: 10px;
 	font-size: 12px;
 	margin-bottom: 20px;
 	float: left;
 	line-height: 20px;
+}
 
+.banner {
+  width: 20px;
+  height: 100%;
+  background-color: royalblue;
+  position: absolute;
+  right: 100px;
+  /* overflow: hidden; */
+}
+
+.ticker {
+   /* height: 20px;
+  width: 20px;  */
+  white-space: nowrap ;
+  color: #fff;
+  position: relative;
+  -ms-transform: rotate(90deg) !important; /* IE 9 */
+  -webkit-transform: rotate(90deg) !important; /* Safari 3-8 */
+  transform: rotate(90deg) !important;
 }
 
 .columns {float: left; padding-left: 10px;}
 
 .links {
-   /* color: red; */
-   position: relative;
+  position: relative;
 }
 
 .links:hover {
@@ -73,15 +92,15 @@ body {
 }
 
 @-webkit-keyframes wiggle{ 
-   0% { left: 0px } 
-   50% {left: 5px;}
-   100% {left: 0px;}
+  0% { left: 0px } 
+  50% {left: 5px;}
+  100% {left: 0px;}
 }
 @-moz-keyframes wiggle 
 {
-   0% { left: 0px } 
-   50% {left: 5px;}
-   100% {left: 0px;}
+  0% { left: 0px } 
+  50% {left: 5px;}
+  100% {left: 0px;}
 }
 
 @keyframes wiggle{ 

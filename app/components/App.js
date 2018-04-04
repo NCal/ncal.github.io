@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
-import { Row, Column } from 'react-foundation'
-import Foundation from 'react-foundation'
+import { Row, Column, Foundation } from 'react-foundation'
+import $ from 'jquery'
+import axios from 'axios'
+import quotes from '../data/quotes'
 
 let links = [
   { name: 'Pegasus: Mobile Ether Alerts [MERN]', url: 'https://nc-pegasus.herokuapp.com/about' },
   { name: 'Fieldmoji [Twitter Node Bot]', url: 'https://www.twitter.com/fieldmoji' },
-  { name: 'Dev-Dash Chrome Extension', url: 'https://ncal.github.io/Dev-Dash/' },
-  { name: 'GDAX-Express [MERN Stack]', url: 'https://github.com/NCal/gdax-express' },
-  { name: 'React Router Tarot App', url: 'https://ncal.github.io/Tarot/' },
-  { name: 'React Flickr Search', url: 'https://ncal.github.io/React-Flickr-Search/' },
-  { name: 'Oblique Strategies', url: 'https://ncal.github.io/Oblique_Strategies/' },
-  { name: 'CSS Mandala Animation', url: 'https://ncal.github.io/Mandala/' },
-  { name: 'Eveningss.com', url: 'http://www.eveningss.com/' }
+  { name: 'Dev-Dash Chrome Extension [React]', url: 'https://ncal.github.io/Dev-Dash/' },
+  { name: 'GDAX-Express [MERN]', url: 'https://github.com/NCal/gdax-express' },
+  { name: 'React Router Tarot App [React]', url: 'https://ncal.github.io/Tarot/' },
+  { name: 'Flickr Search [React]', url: 'https://ncal.github.io/React-Flickr-Search/' },
+  { name: 'Oblique Strategies [React]', url: 'https://ncal.github.io/Oblique_Strategies/' },
+  { name: 'Mandala Animation [CSS]', url: 'https://ncal.github.io/Mandala/' },
+  { name: 'Eveningss.com [React]', url: 'http://www.eveningss.com/' }
 ]
 
 class App extends Component {
@@ -22,6 +24,53 @@ class App extends Component {
         <Links />
         <Contact />
         <Footer />
+        <Banner/>
+      </div>
+    )
+  }
+}
+
+class Banner extends Component {
+  constructor (props) {
+    super()
+    console.log(props)
+
+    this.state = {
+      bannerText: 'testing'
+    }
+  }
+
+  componentDidMount () {
+    this.animateTicker()
+    this.getQuotes()
+  }
+
+  getQuotes () {
+    let self = this
+    let quoteLength = quotes.quotes.length
+    // console.log(quotes.quotes.length)
+    let rand = Math.floor(Math.random() * quoteLength) + 1
+    let randomQuote = quotes.quotes[rand]
+    console.log(randomQuote)
+    self.setState({bannerText: randomQuote.quote})
+  }
+
+  animateTicker () {
+    let self = this
+    console.log('animate ticker')
+    $('.ticker').animate({top: '-1100px'}, 20000, () => {
+      $('.ticker').animate({ top: '0' }, 20000, ()=>{
+        self.animateTicker()
+      })
+    })
+  }
+
+  render () {
+    return (
+      <div className="banner">
+        <div className="ticker">
+          {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText}
+        </div>
       </div>
     )
   }
@@ -60,7 +109,7 @@ class Links extends Component {
       <div className="nav component">
         <Column large={12} medium={12} small={12}>
           <h1>RECENT PROJECTS</h1>
-          {links.map(function(thang, i) {
+          {links.map(function (thang, i) {
             return (
               <a key={i} className="links" href={thang.url}>
                 <h5>{thang.name}</h5>

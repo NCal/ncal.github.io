@@ -36,7 +36,7 @@ class Banner extends Component {
     console.log(props)
 
     this.state = {
-      bannerText: 'testing'
+      bannerText: 'Everyone carries a piece of the puzzle. Nobody comes into your life by mere coincidence. Trust your instincts. Do the unexpected. Find the others.'
     }
   }
 

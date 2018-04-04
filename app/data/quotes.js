@@ -104,13 +104,13 @@ const quotes = {
       'quote': 'I have been impressed with the urgency of doing. Knowing is not enough; we must apply. Being willing is not enough; we must do.', 'author': 'Leonardo da Vinci'
     },
     {
-      'quote': 'Limitations live only in our minds.  But if we use our imaginations, our possibilities become limitless.', 'author': 'Jamie Paolinetti'
-    },
-    {
       'quote': 'You take your life in your own hands, and what happens? A terrible thing, no one to blame.', 'author': 'Erica Jong'
     },
     {
       'quote': 'What’s money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do.', 'author': 'Bob Dylan'
+    },
+    {
+      'quote': ' Everyone carries a piece of the puzzle.Nobody comes into your life by mere coincidence.Trust your instincts.Do the unexpected.Find the others.', 'author': 'Tim Leary'
     },
     {
       'quote': 'I didn’t fail the test. I just found 100 ways to do it wrong.', 'author': 'Benjamin Franklin'

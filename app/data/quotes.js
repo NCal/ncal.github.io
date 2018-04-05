@@ -142,9 +142,6 @@ const quotes = {
       'quote': 'To fathom hell or soar angelic, just take a pinch of psychedelic.', 'author': 'Humphry Osmond'
     },
     {
-      'quote': 'The airplane takes off against the wind.', 'author': 'Henry Ford'
-    },
-    {
       'quote': 'Either write something worth reading or do something worth writing.', 'author': 'Benjamin Franklin'
     },
     {

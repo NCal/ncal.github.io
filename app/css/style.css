@@ -108,3 +108,10 @@ body {
 	50% {left: 5px;}
 	100% {left: 0px;}
 }
+
+@media only screen and (max-width: 720px) {
+
+  .banner, .ticker {
+    display: none;
+  }
+}

@@ -58,8 +58,8 @@ class Banner extends Component {
   animateTicker () {
     let self = this
     console.log('animate ticker')
-    $('.ticker').animate({top: '-1100px'}, 20000, () => {
-      $('.ticker').animate({ top: '0' }, 20000, ()=>{
+    $('.ticker').animate({top: '-1500px'}, 20000, () => {
+      $('.ticker').animate({ top: '0' }, 20000, () => {
         self.animateTicker()
       })
     })
@@ -69,7 +69,7 @@ class Banner extends Component {
     return (
       <div className="banner">
         <div className="ticker">
-          {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText}
+          {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText}
         </div>
       </div>
     )

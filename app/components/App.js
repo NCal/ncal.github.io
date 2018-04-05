@@ -69,8 +69,7 @@ class Banner extends Component {
     return (
       <div className="banner">
         <div className="ticker">
-          {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText}
-        </div>
+          {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText}  {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText} {this.state.bannerText}        </div>
       </div>
     )
   }

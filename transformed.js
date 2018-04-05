@@ -22466,7 +22466,7 @@
 	      }, {
 	        key: 'render',
 	        value: function render() {
-	          return _react2.default.createElement('div', { className: 'banner' }, _react2.default.createElement('div', { className: 'ticker' }, this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText));
+	          return _react2.default.createElement('div', { className: 'banner' }, _react2.default.createElement('div', { className: 'ticker' }, this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, '  ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, ' ', this.state.bannerText, '        '));
 	        }
 	      }]);
 

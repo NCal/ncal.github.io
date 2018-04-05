@@ -111,7 +111,7 @@ body {
 
 @media only screen and (max-width: 720px) {
 
-  .banner, .ticker {
+  .banner, .ticker, .footer {
     display: none;
   }
 }

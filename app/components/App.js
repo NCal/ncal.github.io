@@ -6,11 +6,11 @@ import quotes from '../data/quotes'
 
 let links = [
   { name: 'Pegasus: Mobile Ether Alerts [MERN]', url: 'https://nc-pegasus.herokuapp.com/about' },
-  { name: 'Fieldmoji [Twitter Node Bot]', url: 'https://www.twitter.com/fieldmoji' },
+  { name: 'Fieldmoji [Node Twitter Bot]', url: 'https://www.twitter.com/fieldmoji' },
   { name: 'Dev-Dash Chrome Extension [React]', url: 'https://ncal.github.io/Dev-Dash/' },
   { name: 'GDAX-Express [MERN]', url: 'https://github.com/NCal/gdax-express' },
-  { name: 'React Router Tarot App [React]', url: 'https://ncal.github.io/Tarot/' },
-  { name: 'Flickr Search [React]', url: 'https://ncal.github.io/React-Flickr-Search/' },
+  { name: 'Tarot Web App [React / Router]', url: 'https://ncal.github.io/Tarot/' },
+  { name: 'Flickr Search [React / Redux]', url: 'https://ncal.github.io/React-Flickr-Search/' },
   { name: 'Oblique Strategies [React]', url: 'https://ncal.github.io/Oblique_Strategies/' },
   { name: 'Mandala Animation [CSS]', url: 'https://ncal.github.io/Mandala/' },
   { name: 'Eveningss.com [React]', url: 'http://www.eveningss.com/' }

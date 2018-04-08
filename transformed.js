@@ -22376,6 +22376,10 @@
 
 	    var _quotes2 = _interopRequireDefault(_quotes);
 
+	    var _hush = __webpack_require__(245);
+
+	    var _hush2 = _interopRequireDefault(_hush);
+
 	    function _interopRequireDefault(obj) {
 	      return obj && obj.__esModule ? obj : { default: obj };
 	    }
@@ -22397,6 +22401,10 @@
 	        throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
 	      }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	    }
+
+	    _axios2.default.defaults.headers['content-type'] = 'application/json';
+	    _axios2.default.defaults.headers['secret-key'] = _hush2.default;
+	    _axios2.default.defaults.headers.private = true;
 
 	    var links = [{ name: 'Pegasus: Mobile Ether Alerts [MERN]', url: 'https://nc-pegasus.herokuapp.com/about' }, { name: 'Fieldmoji [Node Twitter Bot]', url: 'https://www.twitter.com/fieldmoji' }, { name: 'Dev-Dash Chrome Extension [React]', url: 'https://ncal.github.io/Dev-Dash/' }, { name: 'GDAX-Express [MERN]', url: 'https://github.com/NCal/gdax-express' }, { name: 'Tarot Web App [React / Router]', url: 'https://ncal.github.io/Tarot/' }, { name: 'Flickr Search [React / Redux]', url: 'https://ncal.github.io/React-Flickr-Search/' }, { name: 'Oblique Strategies [React]', url: 'https://ncal.github.io/Oblique_Strategies/' }, { name: 'Mandala Animation [CSS]', url: 'https://ncal.github.io/Mandala/' }, { name: 'Eveningss.com [React]', url: 'http://www.eveningss.com/' }];
 
@@ -22427,8 +22435,6 @@
 
 	        var _this2 = _possibleConstructorReturn(this, (Banner.__proto__ || Object.getPrototypeOf(Banner)).call(this));
 
-	        console.log(props);
-
 	        _this2.state = {
 	          bannerText: 'Everyone carries a piece of the puzzle. Nobody comes into your life by mere coincidence. Trust your instincts. Do the unexpected. Find the others.'
 	        };
@@ -22444,19 +22450,41 @@
 	      }, {
 	        key: 'getQuotes',
 	        value: function getQuotes() {
+	          _axios2.default.get('//api.jsonbin.io/b/5ac8d353214f9a2b84c6cd49').then(function (response) {
+	            // console.log(response.data)
+	          }).catch(function (error) {
+	            // // console.log(error)
+	          });
+	          // self.postQuote()
 	          var self = this;
 	          var quoteLength = _quotes2.default.quotes.length;
 	          // console.log(quotes.quotes.length)
-	          var rand = Math.floor(Math.random() * quoteLength) + 1;
+	          var rand = Math.floor(Math.random() * quoteLength);
 	          var randomQuote = _quotes2.default.quotes[rand];
-	          console.log(randomQuote);
-	          self.setState({ bannerText: randomQuote.quote });
+	          // console.log('rand', randomQuote)
+	          randomQuote !== undefined ? self.setState({ bannerText: randomQuote.quote }) : console.log('undefined');
 	        }
+
+	        // postQuote () {
+	        //   // console.log('post quote')
+	        //   let quote = { quote: 'Welcome to the jungle', author: 'GnR' }
+
+	        //   axios.post('https://api.jsonbin.io/b/', {
+	        //     data: JSON.stringify(quote)
+	        //   })
+	        //     .then(function (res) {
+	        //       // console.log(res)
+	        //     })
+	        //     .catch(function (err) {
+	        //       // console.log(err)
+	        //     })
+	        // }
+
 	      }, {
 	        key: 'animateTicker',
 	        value: function animateTicker() {
 	          var self = this;
-	          console.log('animate ticker');
+	          // console.log('animate ticker')
 	          (0, _jquery2.default)('.ticker').animate({ top: '-1500px' }, 20000, function () {
 	            (0, _jquery2.default)('.ticker').animate({ top: '0' }, 20000, function () {
 	              self.animateTicker();
@@ -37017,6 +37045,52 @@
 	          module.hot.accept(function (err) {
 	            if (err) {
 	              console.error("Cannot apply hot update to " + "quotes.js" + ": " + err.message);
+	            }
+	          });
+	        }
+	      }module.hot.dispose(function (data) {
+	        data.makeHot = module.makeHot;data.foundReactClasses = foundReactClasses;
+	      });
+	    })();
+	  }
+	}
+
+/***/ }),
+/* 245 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	/* REACT HOT LOADER */if (false) {
+	  (function () {
+	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
+	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
+	        ReactMount = require("react-dom/lib/ReactMount"),
+	        React = require("react");module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {
+	      return RootInstanceProvider.getRootInstances(ReactMount);
+	    }, React);
+	  })();
+	}try {
+	  (function () {
+
+	    'use strict';
+
+	    var apiKey = '$2a$10$BqX4F4/AQ/eYJKVDsSyrX.eslCFCcM9zlIzt5bA5iMNmzCtwpUvsO';
+
+	    module.exports = apiKey;
+
+	    /* REACT HOT LOADER */
+	  }).call(undefined);
+	} finally {
+	  if (false) {
+	    (function () {
+	      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {
+	        var makeExportsHot = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
+	          foundReactClasses = true;
+	        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {
+	          module.hot.accept(function (err) {
+	            if (err) {
+	              console.error("Cannot apply hot update to " + "hush.js" + ": " + err.message);
 	            }
 	          });
 	        }

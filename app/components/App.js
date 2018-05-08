@@ -10,6 +10,7 @@ axios.defaults.headers.private = true
 
 let links = [
   { name: 'Pegasus: Mobile Ether Alerts [MERN]', url: 'https://nc-pegasus.herokuapp.com/about' },
+  { name: 'XZZZ Link Obfuscator [SERN]', url: 'https://xzzz.herokuapp.com/' },
   { name: 'Fieldmoji [Node Twitter Bot]', url: 'https://www.twitter.com/fieldmoji' },
   { name: 'Dev-Dash Chrome Extension [React]', url: 'https://ncal.github.io/Dev-Dash/' },
   { name: 'GDAX-Express [MERN]', url: 'https://github.com/NCal/gdax-express' },

@@ -48,8 +48,8 @@
 
 	/* REACT HOT LOADER */if (false) {
 	  (function () {
-	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
-	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
+	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
+	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
 	        ReactMount = require("react-dom/lib/ReactMount"),
 	        React = require("react");module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {
 	      return RootInstanceProvider.getRootInstances(ReactMount);
@@ -92,7 +92,7 @@
 	  if (false) {
 	    (function () {
 	      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {
-	        var makeExportsHot = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
+	        var makeExportsHot = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
 	          foundReactClasses = true;
 	        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {
 	          module.hot.accept(function (err) {
@@ -22332,8 +22332,8 @@
 
 	/* REACT HOT LOADER */if (false) {
 	  (function () {
-	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
-	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
+	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
+	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
 	        ReactMount = require("react-dom/lib/ReactMount"),
 	        React = require("react");module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {
 	      return RootInstanceProvider.getRootInstances(ReactMount);
@@ -22406,22 +22406,10 @@
 	    _axios2.default.defaults.headers['secret-key'] = _hush2.default;
 	    _axios2.default.defaults.headers.private = true;
 
-	    var links = [{
-	      name: '(DEPRECATED) Pegasus: Mobile Ether Alerts [MERN]',
-	      url: 'https://nc-pegasus.herokuapp.com/about'
-	    }, {
-	      name: '(DEPRECATED) ScreenGrab',
-	      url: 'https://github.com/NCal/screener'
-	    }, { name: 'XZZZ Link Obfuscator [SERN]',
+	    var links = [{ name: 'XZZZ Link Obfuscator [SERN]',
 	      url: 'https://xzzz.herokuapp.com/' }, {
 	      name: 'Fieldmoji [Node Twitter Bot]',
 	      url: 'https://www.twitter.com/fieldmoji'
-	    }, {
-	      name: '(DEPRECATED) Dev-Dash Chrome Extension [React]',
-	      url: 'https://ncal.github.io/Dev-Dash/'
-	    }, {
-	      name: '(DEPRECATED) GDAX-Express [MERN]',
-	      url: 'https://github.com/NCal/gdax-express'
 	    }, {
 	      name: 'Tarot Web App [React / Router]',
 	      url: 'https://ncal.github.io/Tarot/'
@@ -22433,8 +22421,18 @@
 	      url: 'https://ncal.github.io/Oblique_Strategies/'
 	    }, { name: 'Mandala Animation [CSS]',
 	      url: 'https://ncal.github.io/Mandala/'
-	    }, { name: 'Eveningss.com [React]',
-	      url: 'http://www.eveningss.com/'
+	    }, {
+	      name: '(DEPRECATED) Dev-Dash Chrome Extension [React]',
+	      url: 'https://ncal.github.io/Dev-Dash/'
+	    }, {
+	      name: '(DEPRECATED) GDAX-Express [MERN]',
+	      url: 'https://github.com/NCal/gdax-express'
+	    }, {
+	      name: '(DEPRECATED) Pegasus: Mobile Ether Alerts [MERN]',
+	      url: 'https://nc-pegasus.herokuapp.com/about'
+	    }, {
+	      name: '(DEPRECATED) ScreenGrab',
+	      url: 'https://github.com/NCal/screener'
 	    }];
 
 	    var App = function (_Component) {
@@ -22479,11 +22477,13 @@
 	      }, {
 	        key: 'getQuotes',
 	        value: function getQuotes() {
-	          _axios2.default.get('//api.jsonbin.io/b/5ac8d353214f9a2b84c6cd49').then(function (response) {
-	            // console.log(response.data)
-	          }).catch(function (error) {
-	            // // console.log(error)
-	          });
+	          // axios.get('//api.jsonbin.io/b/5ac8d353214f9a2b84c6cd49')
+	          //   .then(function (response) {
+	          //     // console.log(response.data)
+	          //   })
+	          //   .catch(function (error) {
+	          //     // // console.log(error)
+	          //   })
 	          // self.postQuote()
 	          var self = this;
 	          var quoteLength = _quotes2.default.quotes.length;
@@ -22616,7 +22616,7 @@
 	  if (false) {
 	    (function () {
 	      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {
-	        var makeExportsHot = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
+	        var makeExportsHot = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
 	          foundReactClasses = true;
 	        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {
 	          module.hot.accept(function (err) {
@@ -36920,8 +36920,8 @@
 
 	/* REACT HOT LOADER */if (false) {
 	  (function () {
-	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
-	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
+	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
+	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
 	        ReactMount = require("react-dom/lib/ReactMount"),
 	        React = require("react");module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {
 	      return RootInstanceProvider.getRootInstances(ReactMount);
@@ -37068,7 +37068,7 @@
 	  if (false) {
 	    (function () {
 	      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {
-	        var makeExportsHot = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
+	        var makeExportsHot = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
 	          foundReactClasses = true;
 	        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {
 	          module.hot.accept(function (err) {
@@ -37092,8 +37092,8 @@
 
 	/* REACT HOT LOADER */if (false) {
 	  (function () {
-	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
-	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
+	    var ReactHotAPI = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-api/modules/index.js"),
+	        RootInstanceProvider = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"),
 	        ReactMount = require("react-dom/lib/ReactMount"),
 	        React = require("react");module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () {
 	      return RootInstanceProvider.getRootInstances(ReactMount);
@@ -37114,7 +37114,7 @@
 	  if (false) {
 	    (function () {
 	      var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false;if (module.exports && module.makeHot) {
-	        var makeExportsHot = require("/Users/nbroaddus/Desktop/ncal/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
+	        var makeExportsHot = require("/Users/nbroaddus/Desktop/CODE/ncal/Ncal.github.io/node_modules/react-hot-loader/makeExportsHot.js");if (makeExportsHot(module, require("react"))) {
 	          foundReactClasses = true;
 	        }var shouldAcceptModule = true && foundReactClasses;if (shouldAcceptModule) {
 	          module.hot.accept(function (err) {

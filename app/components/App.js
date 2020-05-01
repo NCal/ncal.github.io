@@ -9,27 +9,12 @@ axios.defaults.headers['secret-key'] = apiKey
 axios.defaults.headers.private = true
 
 let links = [
-  {
-    name: '(DEPRECATED) Pegasus: Mobile Ether Alerts [MERN]',
-    url: 'https://nc-pegasus.herokuapp.com/about'
-  },
-  {
-    name: '(DEPRECATED) ScreenGrab',
-    url: 'https://github.com/NCal/screener'
-  },
+
   { name: 'XZZZ Link Obfuscator [SERN]',
     url: 'https://xzzz.herokuapp.com/' },
   {
     name: 'Fieldmoji [Node Twitter Bot]',
     url: 'https://www.twitter.com/fieldmoji'
-  },
-  {
-    name: '(DEPRECATED) Dev-Dash Chrome Extension [React]',
-    url: 'https://ncal.github.io/Dev-Dash/'
-  },
-  {
-    name: '(DEPRECATED) GDAX-Express [MERN]',
-    url: 'https://github.com/NCal/gdax-express'
   },
   {
     name: 'Tarot Web App [React / Router]',
@@ -46,8 +31,21 @@ let links = [
   { name: 'Mandala Animation [CSS]',
     url: 'https://ncal.github.io/Mandala/'
   },
-  { name: 'Eveningss.com [React]',
-    url: 'http://www.eveningss.com/'
+  {
+    name: '(DEPRECATED) Dev-Dash Chrome Extension [React]',
+    url: 'https://ncal.github.io/Dev-Dash/'
+  },
+  {
+    name: '(DEPRECATED) GDAX-Express [MERN]',
+    url: 'https://github.com/NCal/gdax-express'
+  },
+  {
+    name: '(DEPRECATED) Pegasus: Mobile Ether Alerts [MERN]',
+    url: 'https://nc-pegasus.herokuapp.com/about'
+  },
+  {
+    name: '(DEPRECATED) ScreenGrab',
+    url: 'https://github.com/NCal/screener'
   }
 ]
 
@@ -80,13 +78,13 @@ class Banner extends Component {
   }
 
   getQuotes () {
-    axios.get('//api.jsonbin.io/b/5ac8d353214f9a2b84c6cd49')
-      .then(function (response) {
-        // console.log(response.data)
-      })
-      .catch(function (error) {
-        // // console.log(error)
-      })
+    // axios.get('//api.jsonbin.io/b/5ac8d353214f9a2b84c6cd49')
+    //   .then(function (response) {
+    //     // console.log(response.data)
+    //   })
+    //   .catch(function (error) {
+    //     // // console.log(error)
+    //   })
     // self.postQuote()
     let self = this
     let quoteLength = quotes.quotes.length
